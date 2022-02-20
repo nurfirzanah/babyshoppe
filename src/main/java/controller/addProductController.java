@@ -63,7 +63,7 @@ public class addProductController extends HttpServlet {
 			stmt = con.createStatement();
 			stmt.executeUpdate(sql);	
 			//3. create statement 
-			String sql2 = "insert into clothes (prodId, size) values((selext max(prodid) from product), '"+prodSize+"')";
+			String sql2 = "insert into clothes (prodId, size) values((select max(prodid) from product), '"+prodSize+"')";
          
      
 			Statement stmt2=null;
