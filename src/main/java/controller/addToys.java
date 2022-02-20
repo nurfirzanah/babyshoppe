@@ -87,6 +87,6 @@ public class addToys extends HttpServlet {
             // sets the message in request scope
    // forwards to the message page
             
-        }response.sendRedirect("ViewProductlist.jsp");
+        }response.sendRedirect("viewToys.jsp");
     }
 }
