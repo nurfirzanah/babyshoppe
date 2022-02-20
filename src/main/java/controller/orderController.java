@@ -76,7 +76,7 @@ public class orderController extends HttpServlet {
 			
 		}
 			
-	response.sendRedirect("checkout.jsp?");
+	response.sendRedirect("Cart.jsp");
 	}
 }
 
