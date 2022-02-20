@@ -34,7 +34,7 @@
       <div class="column">  
       	<div class="test">&nbsp;&nbsp;&nbsp;
 	      <div  class="cardd">
-	        <img src="getImage.jsp?prodID=<%=resultset.getInt("prodID")%>" width="100%"/>
+	        <img src="images/<%=resultset.getString("fileName") %>" width="100%"/>
        		<h5><%out.print(resultset.getString("prodName")); %></h5>
         	<p class="price">RM <%out.print(resultset.getDouble("prodPrice")); %></p>
         	<p><button><a href="clothesDetails.jsp?prodId=<%=resultset.getInt("prodId")%>" style="color: inherit;text-decoration: none;">
