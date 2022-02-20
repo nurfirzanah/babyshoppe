@@ -56,7 +56,7 @@ public class addToys extends HttpServlet {
         	
             // constructs SQL statement
             String sql = "insert into product( prodName, prodQty, prodDesc, prodPrice, prodType, adminId, filename, savepath) "
-            		+ "values('"+prodName+"', '"+prodQty+"', '"+prodDesc+"', '"+prodPrice+"','clothes', '"+adminId+"', '"+fileName+"', '"+urlPathForDB+"')";
+            		+ "values('"+prodName+"', '"+prodQty+"', '"+prodDesc+"', '"+prodPrice+"','toys', '"+adminId+"', '"+fileName+"', '"+urlPathForDB+"')";
          
             PreparedStatement ps=null;
 			Statement stmt=null;
