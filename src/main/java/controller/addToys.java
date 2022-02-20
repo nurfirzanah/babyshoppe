@@ -18,7 +18,7 @@ import javax.servlet.http.Part;
 
 import connection.ConnectionManager;
  
-@WebServlet("/admin/addToys")
+@WebServlet("/addToys")
 @MultipartConfig(maxFileSize = 16177215)    // upload file's size up to 16MB
 public class addToys extends HttpServlet {
      
