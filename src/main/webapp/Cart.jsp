@@ -37,7 +37,7 @@
 	
 	</div>
 	
-	<form action = "orderController" method = "post">	
+	<form action = "checkout.jsp" method = "post">	
 	
 	<hr>
 	<div class="container">
