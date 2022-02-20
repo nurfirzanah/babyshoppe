@@ -17,7 +17,7 @@
 
 Connection connection = ConnectionManager.getConnection();
 Statement st = connection.createStatement();
-st.executeUpdate("delete from ORDERID where ORDERID = '"+orderID+"' and userId = (select userId from customer where userEmail = '"+email+"')");
+st.executeUpdate("delete from cust_order where ORDERID = '"+orderID+"' and userId = (select userId from customer where userEmail = '"+email+"')");
     //st.executeUpdate(dlteQuery);
     out.println("Deleted!!");
     response.sendRedirect("Cart.jsp");
