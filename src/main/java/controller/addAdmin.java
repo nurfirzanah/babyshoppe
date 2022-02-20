@@ -60,7 +60,7 @@ public class addAdmin extends HttpServlet {
 
 			Statement st = conn.createStatement();
 
-			String sql = "insert into admin(adminid,adminName,adminemail,adminpass,adminnum,adminaddress,managerid) values(admin_seq.NextVal,'"+ name + "','" + email + "','" + pass + "','" + num + "','" + address + "', '"+id+"' )";
+			String sql = "insert into admin(adminName,adminemail,adminpass,adminnum,adminaddress,managerid) values('"+ name + "','" + email + "','" + pass + "','" + num + "','" + address + "', '"+id+"' )";
 
 			st.executeUpdate(sql);
 			out.println("Data is Successfully inserted into Customer Table");
