@@ -18,7 +18,7 @@ import connection.ConnectionManager;
 /**
  * Servlet implementation class editProductController
  */
-@WebServlet("/admin/editToys")
+@WebServlet("/editToys")
 public class editToys extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
