@@ -77,7 +77,7 @@ public class editToys extends HttpServlet {
 	                           ex.printStackTrace();
 	                       }
 	                   }
-	         }response.sendRedirect("ViewProductlist.jsp");
+	         }response.sendRedirect("viewToys.jsp");
 	    }
 
 	}
