@@ -58,7 +58,7 @@ public class AddCustomerController extends HttpServlet {
 
 			Statement st = con.createStatement();
 
-			String sql = "insert into customer(USERID,USERNAME,USEREMAIL,USERPASS,USERNUM,USERADDRESS) values(USERID_seq.NextVal,'"+ name + "','" + email + "','" + pass + "','" + num + "','" + address + "')";
+			String sql = "insert into customer(USERNAME,USEREMAIL,USERPASS,USERNUM,USERADDRESS) values('"+ name + "','" + email + "','" + pass + "','" + num + "','" + address + "')";
 
 			st.executeUpdate(sql);
 			out.println("Data is Successfully inserted into Customer Table");
