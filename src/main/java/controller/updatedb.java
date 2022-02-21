@@ -58,7 +58,7 @@ public class updatedb extends HttpServlet {
 
             Statement st = conn.createStatement();
 
-            String sql = "update customer set USERNAME='"+name+"',USEREMAIL ='"+email+"', USERNUM='"+phonenum+"', USERADDRESS='"+address+"',USERPASS='"+pass+"' where USERID='"+userid+"'";
+            String sql = "update customer set USERNAME='"+name+"', USERNUM='"+phonenum+"', USERADDRESS='"+address+"' where USERID='"+userid+"'";
 
             st.executeUpdate(sql);
             out.println("Data is Successfully Updated into Customer Table");
