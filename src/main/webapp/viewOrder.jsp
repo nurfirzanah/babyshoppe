@@ -18,12 +18,13 @@
 <body>
 
 <%@include file="header2.jsp" %><br>
-	<h3 align="center">order list</h3>
+	<h3 align="center">ORDER LIST</h3>
     <table class="table">
         <thead>
             <tr>
                 <th scope="col">ORDER ID</th>
-               
+                <th scope="col">PAYMENT ID</th>
+               	<th scope="col">ORDER DATE</th>
                 <th scope="col">ORDER STATUS</th>
                 <th scope="col">ORDER PRICE</th>
                 <th scope="col">ORDER QUANTITY</th>
@@ -34,12 +35,14 @@
         </thead>
         <tbody>
         <sql:setDataSource var = "snapshot" driver = "org.postgresql.Driver" url = "jdbc:postgresql://ec2-54-144-165-97.compute-1.amazonaws.com:5432/d3g2s8m8pga0t5" user = "kochvwklfkakik"  password = "d62446c6444745f52e4813b08658f26773094f08d31432f622100b6d0fa9d4da"/>
-	<sql:query dataSource = "${snapshot}" var = "result">SELECT * from CUST_ORDER </sql:query>
+	<sql:query dataSource = "${snapshot}" var = "result">SELECT * from CUST_ORDER C, PAYMENT P WHERE C.ORDERID = P.ORDERID </sql:query>
                 <c:forEach var = "row" items = "${result.rows}">
                  
                     <tr>
                             <th scope="row"><c:out value = "${row.orderID}"/></th>
-                            <td><c:out value = "${row.orderDate}"/></td>
+                            <td><c:out value = "${row.payId}"/></td>
+			    			<td><c:out value = "${row.orderDate}"/></td>
+			    			
                             <td><c:out value = "${row.orderStatus}"/></td>
                             <td><c:out value = "${row.orderPrice}"/></td>
                             <td><c:out value = "${row.orderQty}"/></td>
@@ -51,6 +54,6 @@
         </tbody>
       </table>
 
-
+	
 </body>
 </html>
