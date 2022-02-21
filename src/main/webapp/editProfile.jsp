@@ -53,7 +53,7 @@
 			
 				<div class="form-group col-md-6">
 					<label for="size" style="color:black;font-size:16px;"><b>Email:</b></label>
-					<input type="text" class="form-control" name="email" id="email"  autocomplete="off" value="<%=resultSet.getString("USEREMAIL") %>">
+					<input type="text" class="form-control" name="email" id="email"  autocomplete="off" value="<%=resultSet.getString("USEREMAIL") %>" readonly>
 				</div>
 				<div class="form-group col-md-6">
 					<label for="phoneNum" style="color:black;font-size:16px;"><b>Phone number:</b></label>
