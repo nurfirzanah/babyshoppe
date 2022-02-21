@@ -64,11 +64,7 @@
 					<label for="userAddress" style="color:black;font-size:16px;"><b>Address:</b></label>
 					<input type="text" class="form-control" name="address" id="address"  autocomplete="off" value="<%=resultSet.getString("USERADDRESS") %>">
 				</div>
-				<div class="form-group col-md-6">
-					<label for="userPass" style="color:black;font-size:16px;"><b>Pass:</b></label>
-					<input type="text" class="form-control" name="pass" id="pass"  autocomplete="off" value="<%=resultSet.getString("USERPASS") %>">
-					
-				</div>
+				
 			
 			</div>		
 			<div class="pb-3 d-grid gap-2 col-6 mx-auto">
